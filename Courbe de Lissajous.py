@@ -3,9 +3,9 @@ from math import *
 
 def movement():
     "Permet le tracé de courbe de Lissajous"
-    global x, y, angle1, angle2, r1, r2, flag                               #Variable global pour les modifier à volonté
+    global x, y, angle1, angle2, r1, r2, flag                               #Variable global
     
-    xp, yp = x, y                                                           #Variable xp et yp qui sont deux variables qui vont prendre
+    xp, yp = x, y                                                           #Variable xp et yp qui sont deux variables qui prennent
                                                                             #les anciennes positions de x et y pour le tracé d'une ligne.
     
     x = 200 + r1 * cos(radians(angle1)) + r1 * sin(radians(angle1))         #Cercle x et y, on additione cos(angle) et sin(angle) pour
